@@ -1,0 +1,13 @@
+1: Letra A => Apenas I e II
+
+2:
+a. Falta o DDD dos números de Telefone
+
+b. Armazenaria informação adicional nos atributos Telefone_local e Telefone_celular
+
+c. Haveria uma separação entre o primeiro nome da pessoa de sua assinatura, o que ajudaria em casos que fosse necessário fazer uma diferenciação entre essas partículas do nome ou que necessitasse de selecionar alguma em específico. Porém, isso deixaria a tabela mais extensa, requisitando um número maior de dados e dificultaria na realização de buscas por nome.
+
+d. Separar informações independentes das outras e armazenar em um único atributo informações que complementam uma ao outra para formar um único dado. Porém, isso depende muito das regras de negócio.
+
+e. Projeto 1 => Aluno(nome, cpf, endereco, idade, media, telefone1, telefone2, telefone3, telefone4, telefone5)
+Projeto 2 => Aluno(nome, cpf, endereco, idade, media) + Telefone(cpf [chave estrangeira], telefone1, telefone2, telefone3, telefone4, telefone5)
