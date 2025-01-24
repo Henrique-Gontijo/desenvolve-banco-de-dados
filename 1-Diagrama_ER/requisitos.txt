@@ -1,0 +1,17 @@
+Mini-mundo: Viagem.
+
+Entidades: Bilhete, Passageiro e Voo.
+Entidades Fracas: Reserva de Hotel.
+
+Atributos das Entidades:
+    - Bilhete => preço, poltrona, código (chave) e tipo;
+    - Passageiro => Nome e CPF (chave);
+    - Voo => data_hora, cidade de origem, identificador (chave), cidade de destino e duração;
+    - Reserva de Hotel => início_estadia (chave), qtde_noites, nome_hotel, qtde_hóspedes.
+
+Relações:
+    - Passageiro pode ter N Bilhetes, porém um bilhete pode pertencer a apenas um Passageiro. Não pode existir um bilhete que não pertença a nenhum passageiro.
+    - Um Voo pode possuir N bilhetes, porém um bilhete pode referênciar a apenanas um voo. Não pode existir um bilhete sem um voo.
+    - Passageiro pode ter N Reservas de hotel. Porém uma reserva de hotel pode estar relacionada a apenas um passageiro. Um passageiro não necessariamente tem alguma reserva. 
+
+Obs: Eu adicionaria o número do quarto à e um valor à entidade da Reserva de Hotel. 
